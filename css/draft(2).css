@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0; 
+    
+
+}
+body{
+    background-color: #f5f5f5;
+    color: black;
+  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.grid-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 10px;
+font-size: 1em;
+}
+
+div{
+/* border: 1px solid black; */
+text-align: center;
+}
+.row1{
+grid-column: span 3;
+height: 60px;
+
+}
+.row2{
+grid-column: span 3;
+height: 60px;
+}
+.row3{
+grid-column: span 6;
+height: 50px;
+}
+.row4{
+grid-column: span 6;
+height: 250px;
+}
+.row5{
+grid-column: span 5;
+height: 600px;
+}
+.row6{
+grid-column: span 1;
+height: 1200px;
+}
+.row7{
+grid-column: span 2;
+height: 200px;
+}
+.row8{
+grid-column: span 2;
+height: 200px;
+}
+.row9{
+grid-column: span 2;
+height: 200px;
+}
+.row10{
+    grid-column: span 6;
+}
+
+nav ul{
+display: flex;
+list-style-type: none;
+}
+nav select{
+    display: none;
+    cursor: pointer;
+}
+
+li{
+    padding-top: 5px;
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    height: 50px;
+}
+
+li:nth-child(1){
+flex-basis: 204.8px;
+
+}
+li:nth-child(2){
+flex-basis: 204.8px;
+}
+li:nth-child(3){
+flex-basis: 204.8px;
+}
+li:nth-child(4){
+flex-basis: 204.8px;
+}
+li:nth-child(5){
+flex-basis: 204.8px;
+ }
+ button, input[type="submit"], input[type="button"]{
+    height: 30px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    background-color: #cc0000;
+    color: rgb(255, 255, 255);
+    box-shadow:1px 1px 10px black ;
+    font-size: 1em;
+    
+}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover{
+   background-color: white;  
+   color: black; 
+   transition: 0.2s;
+}
+input{
+    width:300px;
+    height: 30px;
+    border-radius: 10px;
+}
+.marquee{
+    overflow: hidden;
+    animation-name: scroll;
+    animation-duration: 7s;
+}
+@keyframes scroll {
+    0%{transform: translateX(1024px);}
+    100%{transform: translatex(0);}
+}
+ .maincontent{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     height: 1200px;
+    
+ }
+
+.tour{
+     width: 350px;
+     height: 350px;
+     align-items: stretch;
+     background-color: transparent;
+     border-radius: 15px;
+     padding-top: 5px;
+ }
+ .tour:hover{ 
+     background-color: #cc0000;
+    box-shadow:1px 1px 10px black ;
+    color: white;
+    
+ }
+.tour1{
+    align-self: stretch;
+    
+}
+ 
+ .title{
+     grid-column: span 3;
+     height: 50px;
+ }
+ .bookingbox{
+    width: 800px;
+    height: 450px;
+    position: relative;
+    left: 150px;
+    background-color: rgb(228, 228, 228);
+    box-shadow:1px 1px 10px black ;
+ }
+ .bookingbox:hover{
+    background-color: #cc0000;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+ }
+
+ .boxcontactus{
+   
+    position: relative;
+    background-color: #cc0000;
+     height: 350px;
+    /* width: 600px; */ 
+    border-radius: 15px;
+    box-shadow:1px 1px 10px black ;
+    text-align: center ;
+    padding-top: 20px;
+ }
+
+ .boxmap{
+
+    position: relative;
+    background-color: #cc0000;
+    height: 600px;
+    margin: 2px auto;
+    border-radius: 15px;
+    /* box-shadow:1px 1px 10px black ; */
+ }
+ 
+ .mapouter{
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 150px;
+  
+}
+.boxcalendar{
+    background-color: #cc0000;
+    height: 1150px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow:1px 1px 10px black ;
+ }
+ .calendar{
+    text-align: center;
+    width: 600px;
+}
+
+
+ .ad{
+    width: 150px;
+    height: 1180px;
+    opacity: 1;
+}
+.ad:hover{
+    opacity: 0.5;
+}
+.container-ad{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.imgdetailsize{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    /* border-radius: 4%; */
+}
+.p-detailstext{
+    position: relative;
+    top: 170px;
+}
+.boxcontactrow{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    height: 250px;
+    width: 400px;
+    margin: 2px auto;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+.boxcontactrow:hover{
+    background-color: #cc0000;
+    box-shadow:1px 1px 10px black ;
+    color: white;
+}
+@media (max-width: 480px) {
+    .grid-container{
+        display: block; 
+        max-width: 480px;
+    }  
+    .maincontent{
+         display: inline-block;
+        width: 100%; 
+    }  
+    .ad{
+        width: 400px;
+        height: 300px;
+        opacity: 1;
+    }
+    .ad:hover{
+        opacity: 0.5;
+    }
+    .container-ad{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+   
+    /* .tour{
+        width: 100%;
+        
+    } */
+}
+@media (max-width: 760px){
+
+}
