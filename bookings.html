@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKINGS</title>
+    <link rel="stylesheet" href="css/draft(2).css" class="css">
+    <link rel="shortcut icon" href="images/Screenshot_20220529-010434.jpg" type="image/x-icon" class="favicon">
+    
+    <style>
+        .bookcontainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 800px;
+            gap: 20px;
+            
+        }
+        .dispformgrid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 800px;
+            gap: 20px;
+        }
+        .maincontent{
+            height: 500px;
+        }
+        .row6{
+            height: 500px;
+        }
+        .ad{
+            height: 500px;
+        }
+        .bitem{
+            /* border: 1px solid black; */
+            
+            height: 50px;
+        }
+        .bitem1{
+            padding-top: 20px;
+            grid-column: span 1;
+        }
+        .bitem2{
+            padding-top: 20px;
+            grid-column: span 2;
+        }
+        .bitem3{
+            grid-column: span 1;
+        }
+        .bitem4{
+            grid-column: span 2;
+        }
+        .bitem5{
+            grid-column: span 1;
+        }
+        .bitem6{
+            grid-column: span 2;
+        }
+        .bitem7{
+            grid-column: span 1;
+        }
+        .bitem8{
+            grid-column: span 2;
+        }
+        .bitem9{
+            grid-column: span 1;
+        }
+        .bitem10{
+            grid-column: span 2;
+        }
+        .bitem1{
+            grid-column: span 1;
+        }
+        .bitem12{
+            grid-column: span 2;
+        }
+        .bitem13{ 
+            padding-bottom: 20px;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- this is the header section -->
+        <div class="row1">
+            <span>Email: ahemonkhaeandrew@gmail.com</span> 
+            <span>Phone: 08145367828</span>
+        </div>
+       
+        <div class="row2">
+            <span >
+                <a href="https://www.facebook.com">
+                     <img src="images/newfacebooklogo.png" alt="facebook logo" width="40px" height="40px" align="right">
+                </a>
+                <a href="https://www.instagram.com">
+                     <img src="images/newinstagramlogo.png" alt="instagram logo" width="40px" height="40px" align="right">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/free-twitter-logo-icon-2429-thumb.png" alt="twitter logo"  width="40px" height="40px" align="right">
+                </a>
+                 
+            </span>
+        </div>
+        <!-- this is the navigation section -->
+        <div class="container row3">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><button>Home</button></a>
+                    </li>
+                    <li>
+                        <a href="aboutuspage.html"><button>About us</button></a>
+                    </li>
+                    <li>
+                        <a href="places.html"><button>Places</button></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html"><button>Contacts</button></a>
+                    </li>
+                    <li>
+                        <a href="calendar.html"><button>Calendar</button></a>
+                    </li>
+                </ul>
+                <select>
+                    <option value="" selec></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </nav>
+        </div>
+        <!-- this is the banner section -->
+        <div class=" row4 marquee">
+            <h2 align="center">WELCOME TO EDO STATE</h2>
+            <img src="images/theemotanstatue.jpg" alt="the emotan statue" width="230px" height="200px">
+            <img src="images/beninivorymask1.jpg" alt="benin ivory mask" width="230px" height="200px">
+            <img src="images/beninroyalpalace.jpg" alt="benin royal palace" width="230px" height="200px">
+            <img src="images/okomunationalpark.jpg" alt="okomu national park" width="230px" height="200px">
+            <img src="images/bronzecockerel.jpg" alt="bronze cockerel" width="230px" height="200px">
+        
+        </div>
+        <!-- this is the content section -->
+        <div class="maincontent row5">
+            <div class="title">
+                <h2>Hot Tours</h2>
+            </div>
+            <div class="bookingbox">
+                <div class="bookcontainer">
+                    <form action="" method="post"class="dispformgrid">
+                        <div class="bitem bitem1">
+                            <label for="name">Name</label><br>
+                        </div>
+                        <div class="bitem bitem2">
+                            <input type="text" placeholder="Full Name" name="fname" id="fname" onblur="changeColor(this)"><br><br>
+                            </div>
+                        <div class="bitem bitem3">
+                            <label for="email">Email</label><br>
+                        </div>
+                        <div class="bitem bitem4">
+                            <input type="email" placeholder="Email" name="Email" id="Email" onblur="changeColor(this)"><br><br>
+                        </div>
+                        <div class="bitem bitem5">
+                            <label for="Phone">Phone</label><br>
+                        </div>
+                        <div class="bitem bitem6">
+                            <input type="tel" placeholder="Your Phone Number" name="contact" id="contact" onblur="changeColor(this)"><br><br>
+                        </div>
+                        <div class="bitem bitem7">
+                            <label for="dateofarrival">Arrival</label><br>
+                        </div>
+                        <div class="bitem bitem8"> 
+                            <input type="date" name="deit" id="deit" onblur="changeColor(this)"><br><br>
+                        </div>
+                    
+                        <div class="bitem bitem11">
+                            <label for="Number">No. of persons</label><br>
+                        </div>
+                        <div class="bitem bitem12"> 
+                            <input type="number" name="num" id="num" onblur="changeColor(this)"><br><br>
+                        </div>
+                        <div class="bitem bitem13">
+                            <input type="button" value="Save" name="save" id="save" onclick="Checkout()"><br><br>
+                        </div>
+                    </form>
+                </div>                  
+            </div>
+        </div>
+        <!-- this is the ad section -->
+        <div class="row6 container-ad">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9993479658021278"
+            crossorigin="anonymous"></script>
+        </div>
+        <!--  this is the address section-->
+        <div class="row7 boxcontactrow">
+            <p class="address">
+                112, Herbert Macaulay way, <br> Yaba, Lagos.
+                P.O.box 32, 104101. <br>Email address: ahemonkhaeandrew@gmail.com
+           </p>
+        </div>
+        <!-- this is the contact section -->
+        <div class="row8 boxcontactrow">
+            <p >
+                <a href="tel:( 08145367828)">
+                    <img src="images/phoneicon.png" alt="Contact us"  width="40px" height="40px">
+                </a>Contact us
+                 <br>
+                <a href="https://www.facebook.com">
+                    <img src="images/newfacebooklogo.png" alt="facebook logo" width="40px" height="40px" >
+               </a> Facebook <br>
+               <a href="https://www.instagram.com">
+                    <img src="images/newinstagramlogo.png" alt="instagram logo" width="40px" height="40px" >
+               </a> Instagram <br> 
+               <a href="https://twitter.com">
+                   <img src="images/free-twitter-logo-icon-2429-thumb.png" alt="twitter logo"  width="40px" height="40px" > 
+               </a> Twitter <br>
+               
+              
+               
+            </p>
+        </div>
+        <!-- this is the newsletter section -->
+        <div class="row9 boxcontactrow">
+           <p> Subscribe to our newsletter to get the latest news on destinations.</p>
+            <form action="" method="post">
+                <input type="text" placeholder="Name"> <br><br>
+                <input type="email" placeholder="Email"> <br><br>
+                <input type="submit" value="Submit"  class="stylesubmit">
+            </form>
+        </div>
+          <!-- this is the footer section -->
+        <div class="row10">
+            &copy;Edo tourism 2022
+        </div>
+      
+       
+    </div>
+    <script src="Javascript/script.js"></script> 
+</body>
+</html>
